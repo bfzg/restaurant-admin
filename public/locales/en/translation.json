@@ -1,0 +1,20 @@
+{
+  "login": "Login",
+  "username": "username",
+  "password": "password",
+  "success": "success",
+  "reset": "reset",
+  "tableName":"Name",
+  "tableSex":"Sex",
+  "tablePhone":"Phone",
+  "tableIDCard":"ID card",
+  "createTime":"CreateTime",
+  "updateTime":"UpdateTime",
+  "tableOperate":"Operate",
+  "tableEdit":"Edit",
+  "tableDelete":"Delete",
+  "sure":"Sure",
+  "cancel":"Cancel",
+  "male":"male",
+  "female":"female"
+}

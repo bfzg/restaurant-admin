@@ -1,0 +1,20 @@
+{
+  "login": "登录",
+  "username": "用户名",
+  "password": "密码",
+  "success": "成功",
+  "reset": "重置",
+  "tableName": "姓名",
+  "tableSex": "性别",
+  "tablePhone": "手机号",
+  "tableIDCard": "身份证",
+  "createTime": "创建时间",
+  "updateTime": "更新时间",
+  "tableOperate":"操作",
+  "tableEdit":"编辑",
+  "tableDelete":"删除",
+  "sure":"确定",
+  "cancel":"取消",
+  "male":"男",
+  "female":"女"
+}
