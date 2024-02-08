@@ -3,29 +3,24 @@ declare namespace API {
     page: number;
     pageSize: number;
     type?: number;
-  }
+  };
 
-  type EmployeeType ={
+  type EmployeeType = {
     code: number;
     message: string;
     data: any;
-  }
-
-  type LoginType= {
-    username: string;
-    password: string;
-  }
+  };
 
   //新增菜品中分类flavors
-  type FlavorType ={
+  type FlavorType = {
     dishId?: number;
     id?: number;
     name?: string;
     value?: string;
-  }
+  };
 
   //新增 编辑 菜品
-  type DishType ={
+  type DishType = {
     categoryId?: number;
     description: string;
     flavors: FlavorType;
@@ -34,5 +29,5 @@ declare namespace API {
     name: string;
     price: number;
     status: number;
-  }
+  };
 }

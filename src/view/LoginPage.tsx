@@ -1,20 +1,14 @@
-import { useContext } from "react";
-import { Image, Button, Checkbox, Form, Input, Typography, Card } from "antd";
+import {  } from "react";
+import { Button, Checkbox, Form, Input, Typography, Card } from "antd";
 import { ToastContainer, toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { login } from "../api/api.api.ts";
-import { LoginType } from "../types/api.type.ts";
 import { useTranslation } from "react-i18next";
 import {useStore} from "@/store/index.store.ts"
 import { ReactComponent as Logo } from "../assets/svg/logbg.svg";
 
 
 const { Title } = Typography;
-type FieldType = {
-  username?: string;
-  password?: string;
-  remember?: string;
-};
 
 function LoginPage() {  //登录页面
   const { t } = useTranslation();
@@ -27,14 +21,9 @@ function LoginPage() {  //登录页面
   };
 
   //登录
-  const onFinish = async (values: any) => {
-    let data: LoginType = {
-      username: values.username,
-      password: values.password,
-    };
-    let { data: res } = await login(data);
-    if (res.code !== 200) return toast.error(res.data);
-    userLogin.SETTOKEN(res.data)
+  const onFinish = async (values: Login.LoginReq) => {
+    let res = await login(values);
+    userLogin.SETTOKEN(res.data.token)
     toast.success("登录成功!");
     return navigate("/home/index");
   };
